@@ -12,4 +12,17 @@ public class Owner {
     @OneToOne
     @JoinColumn(name = "car_id", referencedColumnName = "id")
     private Car car;
+
+    public Owner() {
+    }
+
+    public Owner(String name) {
+        this.name = name;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+
 }
