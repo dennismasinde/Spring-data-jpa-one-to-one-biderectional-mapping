@@ -24,5 +24,19 @@ public class Owner {
         this.car = car;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public Car getCar() {
+        return car;
+    }
+
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

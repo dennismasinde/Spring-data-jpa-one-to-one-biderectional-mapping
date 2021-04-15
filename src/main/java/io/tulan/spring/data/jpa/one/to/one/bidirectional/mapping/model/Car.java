@@ -20,4 +20,20 @@ public class Car {
     public Car(String model) {
         this.model = model;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
